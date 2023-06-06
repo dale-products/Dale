@@ -4,8 +4,13 @@
     font-family:cursive;
 
 }
+.nav_open_button{
+    display: none;
+}
 body{
     position: relative;
+    background-color: lightgrey;
+
 }
 /*navigation bar*/
 .nav_center{
@@ -98,16 +103,17 @@ body{
     margin: 5% 5%;
     width: 100%;
     max-width: 700px;
+    transition: all 1s;
 }
 /*product boxes*/
 .item_container{
     display: flex;
+    background-color: white;
     flex-direction: column;
     row-gap: 20px;
     width: 100%;
     min-width: 300px;
     max-width: 350px;
-    box-shadow: 0px 0px 10px;
     border-radius: 10px;
     padding-left: 3%;
     padding-right: 3%;
@@ -193,15 +199,36 @@ body{
         flex-direction: row;
     }
     .top_nav{
-        padding-top:20px;
-        padding-bottom:20px;
-        width:50px;
-        height: 100%;
-        flex-direction: column;
-        min-width: 100%;
+        display: none;
+        transition: all 1s;
     }
     .nav_center{
-        width: 30%;
+       /* width: 30%;*/
+        height: 640px;
+        min-width: 10px;
+        width: 10px;
+        background-color: black;
         height: 610px;
+        transition-duration: 1s;
+        transition-property: all;
+    }
+    .nav_center:active,.nav_center:hover .top_nav{
+        display: flex;
+        padding-top:20px;
+        padding-bottom:20px;
+        width:100px;
+        height: 100%;
+        flex-direction: column;
+        min-width: 100px;
+        height: 610px;
+        position: fixed;
+        overflow-x:hidden;
+        overflow-y:hidden;
+
+    }
+    .nav_center:hover{
+        width:max-content;
+        width: 150px;
+        position: fixed;
     }
 }
