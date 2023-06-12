@@ -9,7 +9,6 @@
 }
 body{
     background-color: rgb(236, 221, 221);
-
 }
 /*navigation bar*/
 .nav_center{
@@ -184,8 +183,14 @@ body{
     .container_for_all_products{
         grid-template-columns: 1fr 1fr;
     }
+    .center_item_container{
+        width:100%;
+        display:flex;
+        justify-content: center;
+
+    }
 }
-@media (max-width:850px){
+@media (max-width:810px){
     body{
         padding-top: 20px;
         padding-bottom: 40%;
