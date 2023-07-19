@@ -1,4 +1,5 @@
 /*all*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 :root{
     --color_1:violet;
     --color_2:white;
@@ -9,10 +10,11 @@
     outline: none;
     font-family:cursive;
     color:black;
-    &:focus{
+    font-family: 'Caveat', cursive;
+}
+*:focus{
         outline: 2px red solid;
     }
-}
 .nav_open_button{
     display: none;
 }
